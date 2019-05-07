@@ -14,7 +14,7 @@
 	<h1>The Second Page</h1>
 	<p class ="playingas" id = "lol">Currently playing as: <c:out value="${inUserName}"></c:out></p>
 	
-	
+	<!-- Form to sen userscore and userpoints to the servlet -->
 	<form method = "get" name = "myform" action = "insert">
 	<input type = "hidden" name = "lol" id = "username" value = "<c:out value = "${inUserName}"></c:out>"></input>
 	<input type = "hidden" name = "userscore" id = "userscore"value = ""></input>
@@ -252,7 +252,6 @@
         ctx.strokeRect(snakePart.x, snakePart.y, 10, 10);
       }
       
-
     </script>
 </body>
 </html>

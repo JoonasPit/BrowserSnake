@@ -28,24 +28,27 @@ public class InsertScoreServlet extends HttpServlet {
 		
 		String jsp = "/scoreboard";
 		
-		
-		
-
-		
 		String userName = request.getParameter("lol");
 		String userScore = request.getParameter("userscore");
 		int intScore = Integer.parseInt(userScore);
 		
+		if(intScore == 0) {
+			response.sendRedirect("/ServletSnakeGame/scoreboard");
+		}
+		else {
 		UserScore userscore = new UserScore(userName, intScore);
 		
 		SnakeDAO snakedao = new SnakeDAO();
 		
 		snakedao.addScore(userscore);
 		userscore = new UserScore();
-		System.out.print(userName);
-		System.out.print(userScore);
-		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(jsp);
-		dispatcher.forward(request, response);
+		
+		response.sendRedirect("/ServletSnakeGame/scoreboard");
+		}
+		// System.out.print(userName);
+		// System.out.print(userScore);
+		// RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(jsp);
+		// dispatcher.forward(request, response);
 		
 		// make this not repost all the time..
 
