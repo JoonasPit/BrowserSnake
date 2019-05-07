@@ -15,13 +15,13 @@ public class DataAccessObject {
 	protected static Connection getConnection() {
 		Connection connection = null;			
 
-		// Alkum‰‰ritykset
+		// Alkum√§√§ritykset
 		String username = "a1704571";  
-		// dbk‰ytt‰j‰tunnuksesi on t‰ss‰ a-alkuinen opiskelijanumerosi 
+		// dbk√§ytt√§j√§tunnuksesi on t√§ss√§ a-alkuinen opiskelijanumerosi 
 		
-		String password = "nuXEoQ66s";
+		String password = "";
 		String url = "jdbc:mysql://localhost:3306/a1704571";
-		// tietokantasi nimi on t‰ss‰ a-alkuinen opiskelijanumerosi
+		// tietokantasi nimi on t√§ss√§ a-alkuinen opiskelijanumerosi
 
 		try {
 			// Ladataan ajuri
@@ -51,15 +51,15 @@ public class DataAccessObject {
 	protected static void close(ResultSet rs, Statement stmt, Connection conn) {
 
 		try {
-			if (rs != null) { // Suljetaan rs (palautettu tulostaulu), mik‰li
+			if (rs != null) { // Suljetaan rs (palautettu tulostaulu), mik√§li
 								// olemassa
 				rs.close();
 			}
-			if (stmt != null) { // Suljetaan stmt (SQL-statement), mik‰li
+			if (stmt != null) { // Suljetaan stmt (SQL-statement), mik√§li
 								// olemassa
 				stmt.close();
 			}
-			if (conn != null) { // Suljetaan conn (yhteys), mik‰li olemassa
+			if (conn != null) { // Suljetaan conn (yhteys), mik√§li olemassa
 				conn.close();
 			}
 
