@@ -16,7 +16,7 @@ public class DataAccessObject {
 		Connection connection = null;			
 
 		// Alkumääritykset
-		String username = "a1704571";  
+		String username = "";  
 		// dbkäyttäjätunnuksesi on tässä a-alkuinen opiskelijanumerosi 
 		
 		String password = "";
