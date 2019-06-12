@@ -13,11 +13,11 @@ Done for my basic java-course as a course project.
   * scoreboard
 ## Structure
 - Under the src folder you can find
- * Data Access Objects
- * Control Servlets (control the .jsp pages)
- * Usermodels
-- WebContent
- * Html-pages for the game including the page that the game actually runs on
+  * Data Access Objects
+  * Control Servlets (control the .jsp pages)
+  * Usermodels
+ - WebContent
+   * Html-pages for the game including the page that the game actually runs on
 ## Uses
 - Java
 - JavaScript
