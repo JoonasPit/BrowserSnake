@@ -20,7 +20,7 @@ public class DataAccessObject {
 		// dbkäyttäjätunnuksesi on tässä a-alkuinen opiskelijanumerosi 
 		
 		String password = "";
-		String url = "jdbc:mysql://localhost:3306/a1704571";
+		String url = "jdbc:mysql://localhost:3306/"";
 		// tietokantasi nimi on tässä a-alkuinen opiskelijanumerosi
 
 		try {
